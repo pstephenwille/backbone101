@@ -1,0 +1,46 @@
+body{
+    font-size: 14px;
+    
+}
+#woot {
+    width:100%;
+    background-color: rgba(200, 200, 200, 0.5);
+    padding: 1em;
+}
+.left{
+    float: left;
+    
+}
+.right{
+    float: right;
+}
+.card{
+    background: none repeat scroll 0 0 rgb(255, 255, 255);
+    border: 0.1em solid;
+    width: 32em;
+    padding: 0.2em;
+    position: absolute;
+}
+.card p{
+    display: inline-block;
+}
+.alignCenter{
+    position: absolute;
+    
+}
+.alignRight{
+    float: right;
+    
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.line{
+    width:100%;
+    border: solid;
+    float: left;
+    
+}
