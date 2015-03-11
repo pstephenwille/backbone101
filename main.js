@@ -5,7 +5,7 @@ requirejs.config({
         },
         backbone: {
             deps: [
-                ['jquery.2.1.3', 'require.text.2.0.12.js']
+                ['jquery.2.1.3']
             ],
             exports: 'Backbone'
         }
@@ -14,11 +14,12 @@ requirejs.config({
         jquery:'jquery.2.1.3',
         underscore:'underscore.1.5.0',
         backbone:'backbone.1.1.2',
-        text:'require.text.2.0.12.js'
+        text:'require.text.2.0.12'
     }
 });
 
 
-require(['backbone'], function(Backbone) {
-    console.log('require ', Backbone);
+require(['backbone', 'app', 'text!bookItem.html'], function(Backbone, app, bookItem) {
+    var tpl = _.template( $('#woot').html() );
+    console.log('require ', tpl);
 });
