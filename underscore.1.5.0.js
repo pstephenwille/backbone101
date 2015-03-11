@@ -1029,7 +1029,8 @@
     // Utility Functions
     // -----------------
 
-    // Run Underscore.js in *noConflict* mode, returning the `_` variable to its
+    // Run
+    // Underscore.js in *noConflict* mode, returning the `_` variable to its
     // previous owner. Returns a reference to the Underscore object.
     _.noConflict = function() {
         root._ = previousUnderscore;
